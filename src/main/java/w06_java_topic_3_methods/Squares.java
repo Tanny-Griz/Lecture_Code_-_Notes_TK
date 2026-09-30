@@ -21,4 +21,6 @@ public class Squares {
         // Print answer
         System.out.println("The square of " + n + " is " + sq);
     }
+
+
 }
