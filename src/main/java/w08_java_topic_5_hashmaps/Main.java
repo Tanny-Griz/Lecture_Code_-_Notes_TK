@@ -25,11 +25,9 @@ public class Main {
             System.out.println(college + " is in " + city);
         }
 
-        // --------------------------------------------------
         // HASHMAP
         // Stores data as KEY -> VALUE pairs
         // Keys must be unique
-        // --------------------------------------------------
 
 
         // 1. CREATE A HASHMAP
@@ -104,9 +102,7 @@ public class Main {
         distances.remove("Ely");
 
 
-        // --------------------------------------------------
         // LOOPS
-        // --------------------------------------------------
 
 
         // 11. LOOP THROUGH KEYS
@@ -146,9 +142,7 @@ public class Main {
         }
 
 
-        // --------------------------------------------------
         // EXAMPLE: ADD UP ALL VALUES
-        // --------------------------------------------------
 
         int totalMiles = 0;
 
@@ -159,11 +153,9 @@ public class Main {
         System.out.println("Total miles: " + totalMiles);
 
 
-        // --------------------------------------------------
         // MAP.OF()
         // Creates an immutable Map
         // It cannot be changed after creation
-        // --------------------------------------------------
 
         Map<String, Integer> cities = Map.of(
                 "Duluth", 154,
@@ -178,9 +170,7 @@ public class Main {
         // cities.put("Ely", 245);
 
 
-        // --------------------------------------------------
         // IMPORTANT
-        // --------------------------------------------------
 
         // HashMap does NOT guarantee order.
 
@@ -198,9 +188,7 @@ public class Main {
         // other HashMaps, etc.
 
 
-        // --------------------------------------------------
         // GENERICS
-        // --------------------------------------------------
 
         // HashMap<String, Integer>
         //
