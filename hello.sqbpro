@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="hello.sqlite" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="365"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><table title="cats" custom_title="0" dock_id="1" table="4,4:maincats"/><dock_state state="000000ff00000000fd00000001000000020000000000000000fc0100000001fb000000160064006f0063006b00420072006f00770073006500310100000000ffffffff0000010100ffffff000000000000000000000004000000040000000800000008fc00000000"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1*">SELECT * FROM cats;
+SELECT * FROM cats WHERE age &lt; 12;
+SELECT name FROM cats;
+INSERT INTO cats VALUES ('Socks', 4);
+UPDATE cats
+SET age = 12
+WHERE name = 'Socks';
+
+CREATE TABLE movies (
+    name TEXT,
+    stars INTEGER,
+    watched BOOLEAN
+);
+
+INSERT INTO movies VALUES ('Batman', 0, false);
+INSERT INTO movies VALUES ('Wonder Woman', 4, true);
+INSERT INTO movies VALUES ('Black Panther', 5, true);
+INSERT INTO movies VALUES ('Captain Marvel', 5, true);
+INSERT INTO movies VALUES ('Spiderman', 0, false);
+
+SELECT * FROM movies;
+
+-- All movies, only two columns
+SELECT name, watched FROM movies;
+
+-- All columns, only unwatched movies
+SELECT * FROM movies WHERE watched = false;
+
+-- All columns, movies rated 4 or higher
+SELECT * FROM movies WHERE stars &gt;= 4;
+
+UPDATE movies
+SET stars = 4
+WHERE name = 'Spiderman';
+
+-- 1. Select movies rated over 2 stars
+SELECT * FROM movies WHERE stars &gt; 2;
+
+-- 2. Select movies containing &quot;t&quot; in the title
+SELECT * FROM movies WHERE name LIKE '%t%';
+
+-- 3. Delete all unwatched movies
+DELETE FROM movies WHERE watched = false;
+
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
