@@ -44,6 +44,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- OpenAI API library -->
+        <dependency>
+            <groupId>com.openai</groupId>
+            <artifactId>openai-java</artifactId>
+            <version>4.87.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>
